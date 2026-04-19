@@ -58,3 +58,45 @@
 2026-04-19 13:25:14,304 - log.log - INFO - ====================GridSearchCV====================
 2026-04-19 13:25:14,304 - log.log - INFO - predict
 2026-04-19 13:25:14,346 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-19 22:53:18,483 - log.log - INFO - logger log online
+2026-04-19 22:53:18,494 - log.log - INFO - data load train_data
+2026-04-19 22:53:18,494 - log.log - INFO - estimator is None
+2026-04-19 22:53:18,494 - log.log - INFO - split train and test
+2026-04-19 22:53:18,495 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-19 22:53:18,495 - log.log - INFO - get best estimator
+2026-04-19 22:53:18,496 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 22:53:18,496 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-19 22:54:44,336 - log.log - INFO - best params: {'max_depth': 20, 'n_estimators': 175}
+2026-04-19 22:54:44,337 - log.log - INFO - best score:  0.8756132757347839
+2026-04-19 22:54:44,338 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 22:54:44,338 - log.log - INFO - predict
+2026-04-19 22:54:44,462 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-19 22:54:44,462 - log.log - INFO - try GradientBoostingRegressor
+2026-04-19 22:54:44,464 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 22:54:44,464 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25], 'learning_rate': [0.1, 0.07, 0.15]}
+2026-04-19 22:57:22,306 - log.log - INFO - best params: {'learning_rate': 0.07, 'max_depth': 15, 'n_estimators': 125}
+2026-04-19 22:57:22,307 - log.log - INFO - best score:  0.7951212356949869
+2026-04-19 22:57:22,307 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 22:57:22,307 - log.log - INFO - predict
+2026-04-19 22:57:22,345 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-19 23:01:08,623 - log.log - INFO - logger log online
+2026-04-19 23:01:08,634 - log.log - INFO - data load train_data
+2026-04-19 23:01:08,634 - log.log - INFO - estimator is None
+2026-04-19 23:01:08,634 - log.log - INFO - split train and test
+2026-04-19 23:01:08,635 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-19 23:01:08,635 - log.log - INFO - get best estimator
+2026-04-19 23:01:08,635 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 23:01:08,636 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-19 23:01:52,553 - log.log - INFO - best params: {'max_depth': 20, 'n_estimators': 175}
+2026-04-19 23:01:52,553 - log.log - INFO - best score:  0.8756132757347839
+2026-04-19 23:01:52,553 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 23:01:52,553 - log.log - INFO - predict
+2026-04-19 23:01:52,649 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-19 23:01:52,649 - log.log - INFO - try GradientBoostingRegressor
+2026-04-19 23:01:52,650 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 23:01:52,650 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25], 'learning_rate': [0.1, 0.07, 0.15]}
+2026-04-19 23:04:02,898 - log.log - INFO - best params: {'learning_rate': 0.07, 'max_depth': 15, 'n_estimators': 175}
+2026-04-19 23:04:02,900 - log.log - INFO - best score:  0.7958933474327625
+2026-04-19 23:04:02,900 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 23:04:02,900 - log.log - INFO - predict
+2026-04-19 23:04:02,912 - log.log - INFO - MSE: 0.23262583663881684
