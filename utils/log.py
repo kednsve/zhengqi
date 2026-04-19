@@ -7,7 +7,7 @@ class Logger:
     def __init__(self, log_name):
         self.log_name = log_name + ".log"
         self.fmt = config["log_fmt"]
-        self.logger = logging.getLogger(log_name)
+        self.logger = logging.getLogger(self.log_name)
         self.logger.setLevel(logging.INFO)
 
     def get_logger(self):

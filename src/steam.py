@@ -8,13 +8,13 @@ from utils import Logger
 class Steam:
     def __init__(self, data, log_name, estimator=None):
         self.logger = self._get_logger(log_name)
-        self.data = self._get_data(data)
+        self.data: pd.DataFrame = self._get_data(data)
         self.estimator = self._get_estimator(estimator)
 
     @staticmethod
     def _get_logger(log_name):
         logger = Logger(log_name).get_logger()
-        logger.info("logger online")
+        logger.info(f"logger {log_name} online")
         return logger
 
     def _get_data(self, data):
@@ -23,9 +23,9 @@ class Steam:
             self.logger.info("data load " + data)
         except Exception as e:
             self.logger.error("data loading error")
-            self.logger.error("=" * 30)
+            self.logger.error("=" * 60)
             self.logger.error(e)
-            self.logger.error("=" * 30)
+            self.logger.error("=" * 60)
             exit()
         else:
             return df
@@ -40,9 +40,9 @@ class Steam:
             self.logger.info("estimator load " + file)
         except Exception as e:
             self.logger.error("estimator load error")
-            self.logger.error("=" * 30)
+            self.logger.error("=" * 60)
             self.logger.error(e)
-            self.logger.error("=" * 30)
+            self.logger.error("=" * 60)
             exit()
         else:
             return estimator

@@ -1,5 +1,4 @@
 from .steam import Steam
+from .train import train
 
-all = [
-    "Steam",
-]
+all = ["Steam", "train"]
