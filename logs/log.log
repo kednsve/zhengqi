@@ -1,0 +1,60 @@
+2026-04-19 12:33:44,459 - log.log - INFO - logger log online
+2026-04-19 12:33:44,459 - log.log - ERROR - data loading error
+2026-04-19 12:33:44,459 - log.log - ERROR - ==============================
+2026-04-19 12:33:44,459 - log.log - ERROR - WindowsPath('F:/PycharmProjects/zhengqi/data/zhengqi_train.txt')
+2026-04-19 12:33:44,459 - log.log - ERROR - ==============================
+2026-04-19 12:39:18,381 - log.log - INFO - logger log online
+2026-04-19 12:39:18,381 - log.log - ERROR - data loading error
+2026-04-19 12:39:18,381 - log.log - ERROR - ============================================================
+2026-04-19 12:39:18,381 - log.log - ERROR - WindowsPath('F:/PycharmProjects/zhengqi/data/zhengqi_train.txt')
+2026-04-19 12:39:18,381 - log.log - ERROR - ============================================================
+2026-04-19 12:42:34,212 - log.log - INFO - logger log online
+2026-04-19 12:42:34,228 - log.log - INFO - data load train_data
+2026-04-19 12:42:34,228 - log.log - INFO - estimator is None
+2026-04-19 12:50:24,639 - log.log - INFO - logger log online
+2026-04-19 12:50:24,652 - log.log - INFO - data load train_data
+2026-04-19 12:50:24,653 - log.log - INFO - estimator is None
+2026-04-19 12:50:51,657 - log.log - INFO - logger log online
+2026-04-19 12:50:51,669 - log.log - INFO - data load train_data
+2026-04-19 12:50:51,669 - log.log - INFO - estimator is None
+2026-04-19 12:51:12,691 - log.log - INFO - logger log online
+2026-04-19 12:51:12,708 - log.log - INFO - data load train_data
+2026-04-19 12:51:12,708 - log.log - INFO - estimator is None
+2026-04-19 12:58:11,820 - log.log - INFO - logger log online
+2026-04-19 12:58:11,838 - log.log - INFO - data load train_data
+2026-04-19 12:58:11,838 - log.log - INFO - estimator is None
+2026-04-19 13:00:34,184 - log.log - INFO - logger log online
+2026-04-19 13:00:34,195 - log.log - INFO - data load train_data
+2026-04-19 13:00:34,195 - log.log - INFO - estimator is None
+2026-04-19 13:03:13,313 - log.log - INFO - logger log online
+2026-04-19 13:03:13,326 - log.log - INFO - data load train_data
+2026-04-19 13:03:13,326 - log.log - INFO - estimator is None
+2026-04-19 13:05:49,701 - log.log - INFO - logger log online
+2026-04-19 13:05:49,715 - log.log - INFO - data load train_data
+2026-04-19 13:05:49,715 - log.log - INFO - estimator is None
+2026-04-19 13:23:34,966 - log.log - INFO - logger log online
+2026-04-19 13:23:34,980 - log.log - INFO - data load train_data
+2026-04-19 13:23:34,980 - log.log - INFO - estimator is None
+2026-04-19 13:23:34,980 - log.log - INFO - split train and test
+2026-04-19 13:23:34,986 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-19 13:23:34,988 - log.log - INFO - get best estimator
+2026-04-19 13:23:34,988 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 13:23:34,988 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-19 13:24:09,473 - log.log - INFO - best params: {'max_depth': 20, 'n_estimators': 175}
+2026-04-19 13:24:09,475 - log.log - INFO - best score:  0.8756132757347839
+2026-04-19 13:24:09,475 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 13:24:09,475 - log.log - INFO - predict
+2026-04-19 13:24:09,521 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-19 13:24:40,836 - log.log - INFO - logger log online
+2026-04-19 13:24:40,851 - log.log - INFO - data load train_data
+2026-04-19 13:24:40,851 - log.log - INFO - estimator is None
+2026-04-19 13:24:40,851 - log.log - INFO - split train and test
+2026-04-19 13:24:40,857 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-19 13:24:40,857 - log.log - INFO - get best estimator
+2026-04-19 13:24:40,858 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 13:24:40,858 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-19 13:25:14,299 - log.log - INFO - best params: {'max_depth': 20, 'n_estimators': 175}
+2026-04-19 13:25:14,299 - log.log - INFO - best score:  0.8756132757347839
+2026-04-19 13:25:14,304 - log.log - INFO - ====================GridSearchCV====================
+2026-04-19 13:25:14,304 - log.log - INFO - predict
+2026-04-19 13:25:14,346 - log.log - INFO - MSE: 0.14280621052608308
