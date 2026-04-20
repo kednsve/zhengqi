@@ -1,4 +1,4 @@
-from src import Steam,train
+from src import Steam, train
 
 if __name__ == "__main__":
     S = Steam("train_data", "log")

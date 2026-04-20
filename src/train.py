@@ -1,4 +1,4 @@
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
@@ -22,16 +22,6 @@ def train(steam: Steam):
     steam.logger.info("predict")
     y_pre = steam.estimator.predict(x_test)
     steam.logger.info(f"MSE: {mean_squared_error(y_test, y_pre)}")
-    steam.logger.info("try GradientBoostingRegressor")
-    gb = GradientBoostingRegressor()
-    params = {
-        "n_estimators": [125, 150, 175],
-        "max_depth": [15, 20, 25],
-        "learning_rate": [0.1, 0.07, 0.15],
-    }
-    gb: GradientBoostingRegressor = do_gridsearch(
-        gb, params, x_train, y_train, steam.logger
-    )
-    steam.logger.info("predict")
-    y_pre = gb.predict(x_test)
-    steam.logger.info(f"MSE: {mean_squared_error(y_test, y_pre)}")
+    # MSE: 0.14280621052608308
+    # gbr_model(x_train, y_train,x_test, y_test, steam.logger)
+    # MSE: 0.23262583663881684
