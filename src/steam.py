@@ -1,3 +1,5 @@
+import json
+
 import joblib
 import pandas as pd
 
@@ -10,6 +12,7 @@ class Steam:
         self.logger = self._get_logger(log_name)
         self.data: pd.DataFrame = self._get_data(data)
         self.estimator = self._get_estimator(estimator)
+        self.temp = self._get_temp_json()
 
     @staticmethod
     def _get_logger(log_name):
@@ -46,3 +49,60 @@ class Steam:
             exit()
         else:
             return estimator
+
+    def _get_temp_json(self):
+        try:
+            with open(config[config], "r") as f:
+                j = json.load(f)
+                self.logger.info("temp json loaded")
+        except FileNotFoundError:
+            self.logger.info("temp json init")
+            j = {"models": [], "model_path": {}, "MSE": {}}
+            with open(config[config], "w") as f:
+                json.dump(j, f)
+        except Exception as e:
+            self.logger.error("temp json load error")
+            self.logger.error("=" * 60)
+            self.logger.error(e)
+            self.logger.error("=" * 60)
+            exit()
+        return j
+
+    def write_temp_json(self):
+        with open(config[config], "w") as f:
+            json.dump(self.temp, f)
+        self.logger.info("temp json saved")
+
+    def add_model(self, model, mse=None, model_path=None):
+        model_str = str(model)
+        str_end = model_str.find("(")
+        model_str = model_str[:str_end]
+        self.logger.info("adding model " + model_str)
+        if model not in self.temp["models"]:
+            self.temp["models"].append(model_str)
+            self.temp["MSE"][model_str] = mse
+            self.temp["model_path"][model_str] = str(model_path)
+            self.logger.info("=" * 60)
+            self.logger.info("model add " + model_str)
+            self.logger.info("MSE : " + str(mse))
+            self.logger.info("model_path : " + str(model_path))
+            self.logger.info("=" * 60)
+            self.logger.info("model" + model_str + "added")
+            self.write_temp_json()
+        else:
+            self.logger.info("model" + model_str + " already exists")
+
+    def set_model(self, model, mse=None, model_path=None):
+        model_str = str(model)
+        str_end = model_str.find("(")
+        model_str = model_str[:str_end]
+        if model_str in self.temp["models"]:
+            self.logger.info("reset model " + model_str)
+            self.temp["MSE"][model_str] = mse
+            self.temp["model_path"][model_str] = str(model_path)
+            self.logger.info("=" * 60)
+            self.logger.info("MSE : " + str(mse))
+            self.logger.info("model_path : " + str(model_path))
+            self.logger.info("=" * 60)
+        else:
+            self.add_model(model, mse=mse, model_path=model_path)
