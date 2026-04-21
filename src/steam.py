@@ -73,36 +73,39 @@ class Steam:
             json.dump(self.temp, f)
         self.logger.info("temp json saved")
 
-    def add_model(self, model, mse=None, model_path=None):
+    def add_model(self, model, mse=None):
         model_str = str(model)
         str_end = model_str.find("(")
         model_str = model_str[:str_end]
+        model_path = str(config["model_path"] / model_str) + ".pkl"
+        joblib.dump(model, model_path)
         self.logger.info("adding model " + model_str)
         if model not in self.temp["models"]:
             self.temp["models"].append(model_str)
             self.temp["MSE"][model_str] = mse
-            self.temp["model_path"][model_str] = str(model_path)
+            self.temp["model_path"][model_str] = model_path
             self.logger.info("=" * 60)
             self.logger.info("model add " + model_str)
             self.logger.info("MSE : " + str(mse))
-            self.logger.info("model_path : " + str(model_path))
+            self.logger.info("model_path : " + model_path)
             self.logger.info("=" * 60)
             self.logger.info("model" + model_str + "added")
             self.write_temp_json()
         else:
             self.logger.info("model" + model_str + " already exists")
 
-    def set_model(self, model, mse=None, model_path=None):
+    def set_model(self, model, mse=None):
         model_str = str(model)
         str_end = model_str.find("(")
         model_str = model_str[:str_end]
+        model_path = str(config["model_path"] / model_str) + ".pkl"
         if model_str in self.temp["models"]:
             self.logger.info("reset model " + model_str)
             self.temp["MSE"][model_str] = mse
-            self.temp["model_path"][model_str] = str(model_path)
+            self.temp["model_path"][model_str] = model_path
             self.logger.info("=" * 60)
             self.logger.info("MSE : " + str(mse))
-            self.logger.info("model_path : " + str(model_path))
+            self.logger.info("model_path : " + model_path)
             self.logger.info("=" * 60)
         else:
-            self.add_model(model, mse=mse, model_path=model_path)
+            self.add_model(model, mse=mse)
