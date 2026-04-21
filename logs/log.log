@@ -153,3 +153,55 @@
 2026-04-21 16:03:25,398 - log.log - INFO - ============================================================
 2026-04-21 16:03:25,398 - log.log - INFO - model GradientBoostingRegressor added
 2026-04-21 16:03:25,399 - log.log - INFO - temp json saved
+2026-04-21 19:56:13,637 - log.log - INFO - logger log online
+2026-04-21 19:56:13,654 - log.log - INFO - data load train_data
+2026-04-21 19:56:13,654 - log.log - INFO - estimator is None
+2026-04-21 19:56:13,654 - log.log - INFO - temp json loaded
+2026-04-21 19:56:13,654 - log.log - INFO - split train and test
+2026-04-21 19:56:13,662 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-21 19:56:13,662 - log.log - INFO - RandomForestRegressor
+2026-04-21 19:56:13,662 - log.log - INFO - |-- MSE: 0.14280621052608308
+2026-04-21 19:56:13,662 - log.log - INFO - ----------------------------------------------------
+2026-04-21 19:56:13,662 - log.log - INFO - GradientBoostingRegressor
+2026-04-21 19:56:13,662 - log.log - INFO - |-- MSE: 0.14280621052608308
+2026-04-21 19:56:13,662 - log.log - INFO - ----------------------------------------------------
+2026-04-21 19:56:13,663 - log.log - INFO - logger log online
+2026-04-21 19:56:13,663 - log.log - INFO - logger log online
+2026-04-21 19:56:13,671 - log.log - INFO - data load test_data
+2026-04-21 19:56:13,671 - log.log - INFO - data load test_data
+2026-04-21 19:56:13,671 - log.log - INFO - estimator is None
+2026-04-21 19:56:13,671 - log.log - INFO - estimator is None
+2026-04-21 19:56:13,671 - log.log - INFO - temp json loaded
+2026-04-21 19:56:13,671 - log.log - INFO - temp json loaded
+2026-04-21 19:56:13,671 - log.log - INFO - get best model
+2026-04-21 19:56:13,671 - log.log - INFO - get best model
+2026-04-21 19:56:13,671 - log.log - INFO - set best model RandomForestRegressor
+2026-04-21 19:56:13,671 - log.log - INFO - set best model RandomForestRegressor
+2026-04-21 19:56:13,671 - log.log - INFO - predict
+2026-04-21 19:56:13,671 - log.log - INFO - predict
+2026-04-21 19:57:02,786 - log.log - INFO - logger log online
+2026-04-21 19:57:02,799 - log.log - INFO - data load train_data
+2026-04-21 19:57:02,799 - log.log - INFO - estimator is None
+2026-04-21 19:57:02,799 - log.log - INFO - temp json loaded
+2026-04-21 19:57:02,800 - log.log - INFO - split train and test
+2026-04-21 19:57:02,801 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-21 19:57:02,801 - log.log - INFO - RandomForestRegressor
+2026-04-21 19:57:02,801 - log.log - INFO - |-- MSE: 0.14280621052608308
+2026-04-21 19:57:02,801 - log.log - INFO - ----------------------------------------------------
+2026-04-21 19:57:02,801 - log.log - INFO - GradientBoostingRegressor
+2026-04-21 19:57:02,801 - log.log - INFO - |-- MSE: 0.14280621052608308
+2026-04-21 19:57:02,801 - log.log - INFO - ----------------------------------------------------
+2026-04-21 19:57:02,802 - log.log - INFO - logger log online
+2026-04-21 19:57:02,802 - log.log - INFO - logger log online
+2026-04-21 19:57:02,810 - log.log - INFO - data load test_data
+2026-04-21 19:57:02,810 - log.log - INFO - data load test_data
+2026-04-21 19:57:02,810 - log.log - INFO - estimator is None
+2026-04-21 19:57:02,810 - log.log - INFO - estimator is None
+2026-04-21 19:57:02,811 - log.log - INFO - temp json loaded
+2026-04-21 19:57:02,811 - log.log - INFO - temp json loaded
+2026-04-21 19:57:02,811 - log.log - INFO - get best model
+2026-04-21 19:57:02,811 - log.log - INFO - get best model
+2026-04-21 19:57:02,811 - log.log - INFO - set best model RandomForestRegressor
+2026-04-21 19:57:02,811 - log.log - INFO - set best model RandomForestRegressor
+2026-04-21 19:57:02,811 - log.log - INFO - predict
+2026-04-21 19:57:02,811 - log.log - INFO - predict
