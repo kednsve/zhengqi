@@ -100,3 +100,56 @@
 2026-04-19 23:04:02,900 - log.log - INFO - ====================GridSearchCV====================
 2026-04-19 23:04:02,900 - log.log - INFO - predict
 2026-04-19 23:04:02,912 - log.log - INFO - MSE: 0.23262583663881684
+2026-04-21 15:55:49,849 - log.log - INFO - logger log online
+2026-04-21 15:55:49,866 - log.log - INFO - data load train_data
+2026-04-21 15:55:49,866 - log.log - INFO - estimator is None
+2026-04-21 15:55:49,866 - log.log - ERROR - temp json load error
+2026-04-21 15:55:49,866 - log.log - ERROR - ============================================================
+2026-04-21 15:55:49,866 - log.log - ERROR - unhashable type: 'dict'
+2026-04-21 15:55:49,866 - log.log - ERROR - ============================================================
+2026-04-21 15:59:36,711 - log.log - INFO - logger log online
+2026-04-21 15:59:36,720 - log.log - INFO - data load train_data
+2026-04-21 15:59:36,721 - log.log - INFO - estimator is None
+2026-04-21 15:59:36,721 - log.log - INFO - temp json init
+2026-04-21 15:59:36,721 - log.log - INFO - split train and test
+2026-04-21 15:59:36,732 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-21 15:59:36,732 - log.log - INFO - get best estimator
+2026-04-21 15:59:36,732 - log.log - INFO - ====================GridSearchCV====================
+2026-04-21 15:59:36,732 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-21 16:00:07,649 - log.log - INFO - logger log online
+2026-04-21 16:00:07,662 - log.log - INFO - data load train_data
+2026-04-21 16:00:07,662 - log.log - INFO - estimator is None
+2026-04-21 16:00:07,662 - log.log - INFO - temp json loaded
+2026-04-21 16:00:07,662 - log.log - INFO - split train and test
+2026-04-21 16:00:07,664 - log.log - INFO - init estimator -- RandomForestRegressor
+2026-04-21 16:00:07,664 - log.log - INFO - get best estimator
+2026-04-21 16:00:07,664 - log.log - INFO - ====================GridSearchCV====================
+2026-04-21 16:00:07,664 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25]}
+2026-04-21 16:00:41,933 - log.log - INFO - best params: {'max_depth': 20, 'n_estimators': 175}
+2026-04-21 16:00:41,934 - log.log - INFO - best score:  0.8756132757347839
+2026-04-21 16:00:41,934 - log.log - INFO - ====================GridSearchCV====================
+2026-04-21 16:00:41,934 - log.log - INFO - predict
+2026-04-21 16:00:41,982 - log.log - INFO - MSE: 0.14280621052608308
+2026-04-21 16:00:42,039 - log.log - INFO - adding model RandomForestRegressor
+2026-04-21 16:00:42,039 - log.log - INFO - ============================================================
+2026-04-21 16:00:42,039 - log.log - INFO - model add RandomForestRegressor
+2026-04-21 16:00:42,039 - log.log - INFO - MSE : 0.14280621052608308
+2026-04-21 16:00:42,039 - log.log - INFO - model_path : F:\PycharmProjects\zhengqi\model\RandomForestRegressor.pkl
+2026-04-21 16:00:42,039 - log.log - INFO - ============================================================
+2026-04-21 16:00:42,039 - log.log - INFO - model RandomForestRegressor added
+2026-04-21 16:00:42,040 - log.log - INFO - temp json saved
+2026-04-21 16:00:42,040 - log.log - INFO - try GradientBoostingRegressor
+2026-04-21 16:00:42,040 - log.log - INFO - ====================GridSearchCV====================
+2026-04-21 16:00:42,040 - log.log - INFO - test params {'n_estimators': [125, 150, 175], 'max_depth': [15, 20, 25], 'learning_rate': [0.1, 0.07, 0.15]}
+2026-04-21 16:03:25,354 - log.log - INFO - best params: {'learning_rate': 0.07, 'max_depth': 15, 'n_estimators': 125}
+2026-04-21 16:03:25,361 - log.log - INFO - best score:  0.7948800562049845
+2026-04-21 16:03:25,361 - log.log - INFO - ====================GridSearchCV====================
+2026-04-21 16:03:25,374 - log.log - INFO - MSE: 0.23313705446299807
+2026-04-21 16:03:25,398 - log.log - INFO - adding model GradientBoostingRegressor
+2026-04-21 16:03:25,398 - log.log - INFO - ============================================================
+2026-04-21 16:03:25,398 - log.log - INFO - model add GradientBoostingRegressor
+2026-04-21 16:03:25,398 - log.log - INFO - MSE : 0.23313705446299807
+2026-04-21 16:03:25,398 - log.log - INFO - model_path : F:\PycharmProjects\zhengqi\model\GradientBoostingRegressor.pkl
+2026-04-21 16:03:25,398 - log.log - INFO - ============================================================
+2026-04-21 16:03:25,398 - log.log - INFO - model GradientBoostingRegressor added
+2026-04-21 16:03:25,399 - log.log - INFO - temp json saved

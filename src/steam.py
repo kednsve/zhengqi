@@ -52,13 +52,13 @@ class Steam:
 
     def _get_temp_json(self):
         try:
-            with open(config[config], "r") as f:
+            with open(config['json_data'], "r") as f:
                 j = json.load(f)
                 self.logger.info("temp json loaded")
         except FileNotFoundError:
             self.logger.info("temp json init")
             j = {"models": [], "model_path": {}, "MSE": {}}
-            with open(config[config], "w") as f:
+            with open(config['json_data'], "w") as f:
                 json.dump(j, f)
         except Exception as e:
             self.logger.error("temp json load error")
@@ -69,7 +69,7 @@ class Steam:
         return j
 
     def write_temp_json(self):
-        with open(config[config], "w") as f:
+        with open(config['json_data'], "w") as f:
             json.dump(self.temp, f)
         self.logger.info("temp json saved")
 

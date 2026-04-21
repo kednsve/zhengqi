@@ -35,8 +35,10 @@ def train(steam: Steam):
         steam.estimator = gbr_model(x_train, y_train, steam.logger)
         y_pre = steam.estimator.predict(x_test)
         mse = mean_squared_error(y_test, y_pre)
-        # MSE: 0.14280621052608308
         steam.logger.info(f"MSE: {mse}")
         steam.add_model(steam.estimator, mse)
-    # gbr_model(x_train, y_train,x_test, y_test, steam.logger)
-    # MSE: 0.23262583663881684
+        # MSE: 0.23262583663881684
+    else:
+        steam.logger.info("GradientBoostingRegressor")
+        steam.logger.info(f"|-- MSE: {steam.temp['MSE']['RandomForestRegressor']}")
+        steam.logger.info("----------------------------------------------------")

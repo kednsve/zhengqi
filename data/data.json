@@ -1,0 +1,1 @@
+{"models": ["RandomForestRegressor", "GradientBoostingRegressor"], "model_path": {"RandomForestRegressor": "F:\\PycharmProjects\\zhengqi\\model\\RandomForestRegressor.pkl", "GradientBoostingRegressor": "F:\\PycharmProjects\\zhengqi\\model\\GradientBoostingRegressor.pkl"}, "MSE": {"RandomForestRegressor": 0.14280621052608308, "GradientBoostingRegressor": 0.23313705446299807}}
